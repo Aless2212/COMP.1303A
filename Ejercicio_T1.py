@@ -6,8 +6,8 @@ class Equipo:
         self.partidosGanados = 0
         self.partidosPerdidos = 0
 
-equipo1 = Equipo("Camarones")
-equipo2 = Equipo("Lagartijas")
+equipo1 = Equipo("Sebas")
+equipo2 = Equipo("Dennis")
 
 def Puntos():
     return random.randint(10, 28)
@@ -70,5 +70,4 @@ totalPartidos = int(input("¿Cuántos partidos deben jugar los equipos?: "))
 for i in range(totalPartidos):
     print(f"\n--- Partido {i + 1} ---")
     JugarPartido(i + 1)
-
 ResultadoTorneo()
