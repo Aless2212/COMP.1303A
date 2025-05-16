@@ -6,8 +6,8 @@ class Equipo:
         self.partidosGanados = 0
         self.partidosPerdidos = 0
 
-equipo1 = Equipo("Sebas")
-equipo2 = Equipo("Dennis")
+equipo1 = Equipo("Joaquin")
+equipo2 = Equipo("Chino")
 
 def Puntos():
     return random.randint(10, 28)
