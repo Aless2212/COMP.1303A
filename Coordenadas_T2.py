@@ -17,15 +17,15 @@ def coordenada_alejada(coords):
             return None
     else:
         mitad = len(coords) // 2
-        izquierda = coordenada_alejada(coords[:mitad])
-        derecha = coordenada_alejada(coords[mitad:])
+        izq = coordenada_alejada(coords[:mitad])
+        der = coordenada_alejada(coords[mitad:])
 
-        if izquierda and derecha:
-            return izquierda if distancia_pitagoras(izquierda) > distancia_pitagoras(derecha) else derecha
-        elif izquierda:
-            return izquierda
+        if izq and der:
+            return izq if distancia_pitagoras(izq) > distancia_pitagoras(der) else der
+        elif izq:
+            return izq
         else:
-            return derecha
+            return der
 
 # Main
 def main():
