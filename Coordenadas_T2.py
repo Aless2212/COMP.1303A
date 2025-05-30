@@ -10,11 +10,7 @@ def coordenada_alejada(coords):
     if len(coords) == 0:
         return None
     if len(coords) == 1:
-        x, y = coords[0]
-        if x > 0 and y < 0:
-            return coords[0]
-        else:
-            return None
+        return coords[0]  # Retornar siempre la coordenada cuando solo hay una
     else:
         mitad = len(coords) // 2
         izq = coordenada_alejada(coords[:mitad])
